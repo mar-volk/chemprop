@@ -1033,7 +1033,7 @@ def test_bounded(monkeypatch, bounded_data_path):
         "--epochs",
         "3",
         "-l",
-        "bounded-mse"
+        "bounded-mse",
     ]
 
     with monkeypatch.context() as m:
