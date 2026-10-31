@@ -1,5 +1,6 @@
 """This tests the CLI functionality of training and predicting a regression model on a single molecule.
 """
+from pathlib import Path
 import sys
 
 import numpy as np
@@ -8,7 +9,6 @@ import pytest
 from chemprop.cli.hpopt import NO_HYPEROPT, NO_OPTUNA, NO_RAY
 from chemprop.cli.main import main
 from chemprop.cli.utils.MAB_parsing import build_MAB_data_from_files
-from pathlib import Path
 
 pytestmark = pytest.mark.CLI
 
